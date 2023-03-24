@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur's Portfolio Site</title>
+
+    <link href="normalize.css" rel="stylesheet">
+    </head>
+
+
+
+    <link href="./Arthur&#39;s Portfolio Site_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Arthur&#39;s Portfolio Site_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="file:///E:/portfolio.css">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Shadows+Into+Light&family=Work+Sans:ital,wght@1,200;1,400&display=swap" rel="stylesheet">
+<style>
+
+    body {
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        font-family: "Work Sans";
+    }
+    nav {
+        display: flex;
+        background-color: #4DC9DC;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1, h2, h3 {
+        font-family:"Days One";
+    }
+
+    nav ul { 
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 0 15px;
+        color: whitesmoke;
+        transition: 0.2s;
+        text-transform: uppercase;
+        
+    }
+
+    nav ul li a:hover {
+
+        transition: 0.2s;
+        color:#5B96A0;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+    }
+
+    .hero {
+        padding: 130px;
+
+    }
+
+    .hero img {
+        border-style: none;
+        border-radius: 50%;
+        margin: 0 auto;
+        max-width: 440px;
+        display: block;
+    }
+
+    h1 {
+
+        color: black;
+        text-align:center;
+        font-size: 24px;
+        margin: 30px 0px 100px;
+
+    }
+
+    .aboutme {
+width: 90%;
+max-width: 1100px;
+height: auto;
+background-color: whitesmoke;
+text-align: center;
+padding: 40px 50px 70px;
+margin: 0 auto;
+box-shadow: 10px 10px 0px rgb(0 0 0 /40%), -10px -10px 0px rgb(255 114 114 / 80%);
+
+    }
+
+    .aboutme-section {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .aboutme-image {
+        height: 450px;
+        width: 400px;
+        background-image: url("Images/Arthur-Football.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .aboutme-text {
+        height: auto;
+        width: 40%;
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    #projects {
+        padding: 5px;
+        margin: 5%;
+        width: 90%;
+        height: auto;
+        text-align: centre;
+    
+    }
+
+    .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    #projects h2 {
+
+        color: #5B96A0;
+
+    }
+    .earth-project {
+        width: 400px;
+        height: 400px;
+        background: white;
+        position: relative;
+        border-radius: 10px;
+        background-image:url("images/The_Blue_Marble_\(remastered\).jpg") ;
+        margin: 20px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .bbc-project {
+        width: 400px;
+        height: 400px;
+        background: white;
+        position: relative;
+        border-radius: 10px;
+        background-image:url("Images/BBC-NEWS.jpg") ;
+        margin: 20px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .text {
+        position: absolute;
+        height: 75px;
+        width: 90%;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.2s;
+        padding: 20px;
+
+
+    }
+
+    .text:hover {
+        height: 175px;
+        transition: 0.3s;
+    }
+
+    text h3 {
+
+        margin-top: 3px;
+    }
+
+    .content {
+        color: black;
+    
+    }
+
+    .button {
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 160px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    } 
+
+    .contact {
+
+        width: 100%;
+        height: auto;
+        padding:75px 0 50px 0;
+        text-align: center;
+        background-color:#5B96A0;
+    }
+    .contact h2, .contact p {
+        color: whitesmoke;
+    }
+    .contact-form {
+        max-width: 800px;
+        display: flex;
+        text-align: left;
+        max-width: 1100px;
+        margin: 0 auto;
+        color: white;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 9px;
+    }
+
+    .message{
+        display:inline-flex;
+        flex-direction:column;
+        width: 60%;
+    }
+
+    .message textarea {
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    .contact-details {
+        flex: 1;
+        margin-bottom: 50px;
+
+    }
+
+    .contact-details input {
+        width: 100px;
+        border-radius: 5px;
+        border: 0px;
+        padding: 15px 30px;
+        margin-left: 20px;
+    }
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contactme">Contact Me</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <img src="Images/Arthur-headshot.jpg">
+            <h1>Hi! My name is Arthur. I specialise in HTML, HTML5 and CSS.</h1>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+            <div class="aboutme-text">
+                <p>A couple of years ago you would've seen me playing full time football at a professional football club. But none the less Web Development had always interested me. I thought to myself how do they do it? A few years went by after stopping football completely I honestly wondered what I would do with my life.</p>
+
+                <p>After roles within Retail Management, I found myself still not knowing what I wanted to build a career in.</p>
+
+                <p>After speaking to some of my closest friends, I found myself suddenly wanting to build a career within Web Development. After being in management and captaincy roles, I knew I loved and thrived being in a working but competitive enviroment.</p>
+                <p> I am familiar with HTML, HTML5 and CSS. I would love for you check out some of my projects!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <h2>Projects</h2>
+            <div class="projects">
+
+                <div class="earth-project">
+                    <div class="text">
+                        <h3 class="project-name">Earth Facts</h3>
+                        <div class="content">
+                            <p>A HTML project about some facts about the earth.</p>
+                        </div>
+
+                        <a class="button" href="file:///E:/Images/Facts-about-the-earth.html" target="_bank"> View Project</a>
+
+                </div>
+
+                </div>
+
+
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC News Clone</h3>
+                        <div class="content">
+                            <p>This project is a clone of the BBC news website from the Web Dev 2.0 Course.</p>
+                        </div>
+
+                        <a class="button" href="https://eco-cdn.co.uk/webdeveloper2.0/content/2-css/bbc.html" target="_bank"> View Project</a>
+
+                </div>
+
+                
+
+            </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+ <section id="contactme" class="contact"> 
+    <h2>Contact</h2>
+    <p>Use the form to get in touch with me! I would love to hear from you.</p>
+    <form class="contact-from">
+
+            <div class="contact-details">
+                <lable for="name">Name</table>
+                <input type="text" id="your name" placeholder="Your name">
+
+                
+            
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address">
+
+            
+                
+            </div>
+
+            <div class="message">
+
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="15"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+
+
+    </form>
+
+
+
+
+ </section>
+
+    
+
+</body></html>
